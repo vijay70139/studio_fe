@@ -1,0 +1,148 @@
+/* Footer.css */
+.footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 60px 0 20px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 2fr;
+    gap: 40px;
+  }
+  
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .social-link {
+    color: #ffffff;
+    transition: color 0.2s ease;
+  }
+  
+  .social-link:hover {
+    color: #3b82f6;
+  }
+  
+  .footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 20px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-list li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-list a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-list a:hover {
+    color: #ffffff;
+  }
+  
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .newsletter-text {
+    color: #9ca3af;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .footer-input {
+    background-color: #374151;
+    border: 1px solid #4b5563;
+    border-radius: 6px;
+    padding: 10px 16px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .footer-input::placeholder {
+    color: #9ca3af;
+  }
+  
+  .footer-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+  }
+  
+  .signup-button {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .copyright {
+    text-align: center;
+    color: #9ca3af;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #374151;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .footer-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 20px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer {
+      padding: 40px 0 20px;
+    }
+    
+    .copyright {
+      margin-top: 40px;
+    }
+  }

@@ -1,0 +1,132 @@
+/* StudioHeader.css */
+.header-container {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.search-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 120px;
+}
+
+.location-input {
+  width: 200px;
+  padding: 8px 12px 8px 36px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.date-input {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  min-width: 140px;
+}
+
+.time-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  background-color: white;
+}
+
+.icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  color: #666666;
+}
+
+/* Position icons */
+.input-container .icon:first-child {
+  left: 12px;
+}
+
+.calendar-icon {
+  right: 12px;
+  pointer-events: none;
+}
+
+.chevron-icon {
+  right: 12px;
+  pointer-events: none;
+}
+
+/* Hover states */
+.location-input:hover,
+.date-input:hover,
+.time-input:hover {
+  border-color: #d0d0d0;
+}
+
+/* Focus states */
+.location-input:focus,
+.date-input:focus,
+.time-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.1);
+}
+
+/* Placeholder styles */
+::placeholder {
+  color: #9ca3af;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .search-controls {
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+
+  .input-container {
+    flex: 1 1 calc(50% - 6px);
+    min-width: unset;
+  }
+
+  .location-input {
+    width: 100%;
+  }
+}
